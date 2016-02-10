@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="helloWorld" ng-controller="theController">
+<head>
+    <meta charset="UTF-8">
+    <title>{{page.title}}</title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+    <div class="jumbotron col-md-6 col-md-offset-3 ">
+        <div class="container ">
+            <h1 class="col-md-offset-0">{{page.message}}</h1>
+            <p class=" col-md-offset-3" >{{page.description}}</p>
+            <i class="text-muted col-md-3 col-md-offset-9">{{page.author}}</i>
+        </div>
+    </div>
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<!-- endbower -->
+<script src="scripts/helloWorld.js"></script>
+</body>
+</html>
